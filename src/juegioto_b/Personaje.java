@@ -1,15 +1,16 @@
-package juegioto_b;
-public class Personaje {
-	
-	private  String nombre;		//Nombre del personaje
-        private  int modo;              //modo de juego, operaciones con las que quiere jugar
-	private  int vida;			//Vida del personaje
-	private  int rVida;			//Recuperacion de Vida
-	private  int atq1;			//Ataque Basico 1
-	private  int atq2;			//Ataque Basico 2	
-	private  int atq3;			//Ataque Super
+package Pet_Fight;
 
-    public Personaje(String nombre, int modo , int vida, int rVida, int atq1, int atq2, int atq3) {
+public class Personaje {
+
+    private String nombre;		//Nombre del personaje
+    private int modo;              //modo de juego, operaciones con las que quiere jugar
+    private int vida;			//Vida del personaje
+    private int rVida;			//Recuperacion de Vida
+    private int atq1;			//Ataque Basico 1
+    private int atq2;			//Ataque Basico 2	
+    private int atq3;			//Ataque Super
+
+    public Personaje(String nombre, int modo, int vida, int rVida, int atq1, int atq2, int atq3) {
         this.nombre = nombre;
         this.modo = modo;
         this.vida = vida;
@@ -18,8 +19,8 @@ public class Personaje {
         this.atq2 = atq2;
         this.atq3 = atq3;
     }
-        public static Personaje player1 = new Personaje("player",1,20,20,20,20,20);
-	public static Personaje player2 = new Personaje("player",1,20,20,20,20,20);
+    public static Personaje player1 = new Personaje("player", 1, 20, 20, 20, 20, 20);
+    public static Personaje player2 = new Personaje("player", 1, 20, 20, 20, 20, 20);
 
     public String getNombre() {
         return nombre;
@@ -83,7 +84,7 @@ public class Personaje {
 
     public static void setPlayer2(Personaje player2) {
         Personaje.player2 = player2;
-    }  
+    }
 
     public int getModo() {
         return modo;
@@ -92,5 +93,6 @@ public class Personaje {
     public void setModo(int modo) {
         this.modo = modo;
     }
-    
+
 }
+
