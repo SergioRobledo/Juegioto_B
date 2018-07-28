@@ -4,6 +4,7 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 import static Pet_Fight.Batalla.turno;
 
+// Main Batalla file
 public class Batalla extends Personaje {
 
     public static int a;
